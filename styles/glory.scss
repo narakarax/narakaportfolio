@@ -1,0 +1,108 @@
+
+body{
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+.glory-main-wraper{
+  background-color: white;
+  // max-width: 1600px;
+  position: relative;
+  .tsparticle{
+    div{
+      width: 100%;
+      height: 100%;
+      .tsparticles-canvas-el{
+        position: relative !important;
+      }
+
+    }
+  }
+  .about-me-particle-image{
+    .particle-image{
+      canvas{
+        position: relative !important;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        min-width: 300px;
+        min-height: 300px;
+      }
+    }
+  }
+
+  .navbar-header{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    // max-width: 1600px;    
+    // background-image: linear-gradient(to right, #556EE6, #6B21A8);
+    z-index: 100;
+    top:0px;
+    border-bottom: white 1px dashed;
+    &.sticky {
+        width: 100%;
+        position: fixed !important;            
+        background-color: rgba(0,0,0, 0.6);
+        // box-shadow: 0px 5px 10px rgba(0,0,0,0.05);
+        box-shadow: rgba(183, 183, 185, 0.4) 0px 3px 3px 0px;
+        border-bottom: none;
+    }
+  }
+  
+  .form-control{
+    background-color: transparent;
+    border-bottom: white solid 1px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 4px 8px;
+  }
+  .form-control:focus{
+    background-color: transparent;
+    border-bottom: white solid 1px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 4px 8px;
+  }
+  .back-to-top {
+    background-color: black;
+    border:solid 2px white;
+    color: #ffffff;
+    position: fixed;
+    display: none;    
+    padding: 10px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 75px;
+    z-index: 20;
+    transition: ease-out 0.5s;
+  }
+  .back-to-top:hover {
+    background-color: white;
+    border:solid 2px black;
+    color: black;
+  }
+  #portfolio-view{
+    ul{
+      display: flex;
+      justify-content: center;
+      li{
+        padding: 5px 10px;
+        font-size: 20px;
+      }      
+    }
+  }
+
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 20;
+}
+@media only all and (max-width: 768px) {  
+  
+}
