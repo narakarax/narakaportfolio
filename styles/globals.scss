@@ -173,7 +173,7 @@ html {
     }
     @for $i from 1 through 12 {
       &:nth-of-type(#{$i}){
-        transform: rotate(((360/12)*$i)+deg);
+        transform: rotate(((360/12)*$i));
       }
     }
   }
